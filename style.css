@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f5f5f7;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+header {
+  background-color: #f5f5f7;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+
+  > a {
+    color: #5b47d1;
+    background-color: #f0edff;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+
+  nav {
+    display: inline-block;
+
+    ul {
+      li {
+        display: inline;
+        list-style: none;
+        padding: 10px 20px;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  max-width: 1920;
+  min-height: 400px;
+}
+
+/* Image layer */
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Text – top layer */
+.hero h1 {
+  position: relative;
+  padding-bottom: 10px;
+  width: 975px;
+  height: 58px;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 48px;
+  letter-spacing: 0%;
+  z-index: 1;
+}
+
+.hero p {
+  position: relative;
+  padding: 20px;
+  width: 641px;
+  height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  z-index: 3;
+}
+
+/* To text center*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blog-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 100px;
+}
+
+.blog-section,
+.blog-section * {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  max-width: 560px;
+}
+
+.card-figure {
+  margin: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 240px;
+  padding: 20px;
+  display: flex;
+  gap: 6px;
+  position: relative;
+  align-items: flex-end;
+}
+
+.card-img.bg-purple {
+  background-color: #c7b8ff;
+}
+
+.card-img.bg-pink {
+  background-color: #ffb8d8;
+}
+
+.card-img.bg-blue {
+  background-color: #b8e0ff;
+}
+
+.card-img.bg-green {
+  background-color: #d4ffb8;
+}
+
+.card-img.bg-bisque {
+  background-color: #ffe4b8;
+}
+
+.card-img.bg-peach {
+  background-color: #ffd4b8;
+}
+
+.card-body {
+  padding: 32px 32px 40px;
+  background-color: #ffffff;
+}
+
+.card-date-author {
+  background: white;
+  padding: 18px 32px 14px;
+  margin-left: -15px;
+  display: flex;
+  gap: 48px;
+  align-items: baseline;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #111;
+  white-space: nowrap;
+}
+
+.card-body {
+  padding: 0 32px 36px;
+}
+
+.card-title {
+  font-family: "Inter", system-ui, sans-serif;
+  margin-top: 0%;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+.card-desc {
+  margin-top: 0;
+  margin-left: -15px;
+  margin-bottom: -15px;
+  font-size: 15px;
+}
