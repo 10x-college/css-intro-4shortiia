@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,7 +17,7 @@
         <ul>
           <li><a href="#home">მთავარი</a></li>
           <li><a href="#blog">ბლოგი</a></li>
-          <li><a href="#category">კატეგორია</a></li>
+          <li><a href="#categories">კატეგორია</a></li>
           <li><a href="#about-us">ჩვენ შესახებ</a></li>
           <li><a href="#contact">კონტაქტი</a></li>
         </ul>
@@ -57,7 +60,7 @@
               <div class="card-img bg-pink"></div>
               <figcaption class="card-date-author">
                 <span>7 იანვარი</span>
-                <span>ავტორი: ნინო გელაშვილი</span>
+                <span>ავტორი: გიორგი ბერიძე</span>
               </figcaption>
             </figure>
 
@@ -137,12 +140,12 @@
     <!-- This is a footer -->
     <footer>
       <div class="container">
-        <section class="tech-blog">
+        <section id="about-us" class="tech-blog">
           <h3 class="footer-title">TechBlog</h3>
           <p class="footer-desc">თანამედროვე ტექნოლოგიების შესახებ საინფორმაციო პლატფორმა. ჩვენ გთავაზობთ უახლეს სიახლეებს IT სფეროდან.</p>
         </section>
 
-        <section class="category">
+        <section id="categories" class="category">
           <h3 class="footer-title">კატეგორები</h3>
           <ul>
             <li><a href="#">პროგრამირება</a></li>
@@ -154,7 +157,7 @@
       </div>
 
       <!-- Addres Section -->
-      <address class="contact">
+      <address id="contact" class="contact">
         <h3 class="footer-title">კონტაქტი</h3>
         <p class="footer-desc">
           Email:
